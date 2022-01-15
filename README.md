@@ -14,7 +14,9 @@
 <b>src/component/MyCards.js</b>
 
 <b>src/parts/List.js</b>
+
 <b>src/parts/Search.js</b>
+
 <b>src/parts/Thumb.js</b>
 
 <b>src/App.js</b>
