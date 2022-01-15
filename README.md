@@ -1,8 +1,9 @@
 # Profile cards..
 
 # How to start
-<b>1: </b>npm i
-<b>2: </b>npm start
+<b>1: </b>npm i 
+
+<b>2: </b>npm start 
 
 
 # The files that are being used ?
