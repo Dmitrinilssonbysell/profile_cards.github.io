@@ -5,6 +5,10 @@
 
 <b>2: </b>npm start 
 
+<b>3: </b>For build!? Do the: npm run build
+
+<b>4: </b>No waste of time? go to https://thumbcards.netlify.app/
+
 
 # The files that are being used ?
 <b>src/component/MyCards.js</b>
