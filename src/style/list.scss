@@ -1,0 +1,115 @@
+
+
+
+
+.list-display-main-container {
+    width: 733px;
+    margin: 0 auto;
+    .list-card {
+        margin: 20px 0;
+        height: 140px;
+        border-radius: 20px;
+        box-shadow: 0 2px 5px rgb(25,25,25);
+        #thumbnail-photo-mobile {
+            display: none;
+        }
+        #thumbnail-photo-desktop {
+            display: block;
+            box-shadow: 0 2px 5px rgb(25,25,25);
+            position: absolute;
+            border-radius: 100px;
+            height: 120px;
+            width: 120px;
+            margin: 10px 20px 0 20px;
+        }
+        .right-section {
+            display: flex;
+            border-radius: 50px 20px 20px 0;
+            flex-direction: row;
+            justify-content: space-between;
+            background: white;
+            width: 89%;
+            height: 100%;
+            margin: 0 0 0 auto;
+            .person-box {
+                margin: auto 70px;
+                p:nth-child(1) {
+                    text-align: center;
+                    font-weight: 600;
+                }
+                p:nth-child(2) {
+                    text-align: center;
+                    font-weight: 400;
+                    
+                }
+            }
+            .contact-box {
+                display: flex;
+                .icon-contact {
+                    align-self: center;
+                    font-size: 1.7rem;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen 
+and (min-width: 300px)
+and (max-width: 770px) {
+    .list-display-main-container {
+        width: auto;
+        margin: 0 20px;
+        .list-card {
+            margin: 20px 0;
+            height: 90px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgb(25,25,25);
+            #thumbnail-photo-desktop {
+                display: none;
+            }
+            #thumbnail-photo-mobile {
+                display: block;
+                box-shadow: 0 2px 5px rgb(25,25,25);
+                position: absolute;
+                border-radius: 100px;
+                height: 70px;
+                width: 70px;
+                margin: 10px 20px 0 20px;
+            }
+            .right-section {
+                display: flex;
+                border-radius: 50px 20px 20px 0;
+                flex-direction: row;
+                justify-content: space-between;
+                background: white;
+                width: 89%;
+                height: 100%;
+                margin: 0 0 0 auto;
+                .person-box {
+                    margin: 0 0 auto 70px;
+                    p:nth-child(1) {
+                        text-align: center;
+                        font-weight: 600;
+                        font-size: 0.9rem;
+                    }
+                    p:nth-child(2) {
+                        text-align: center;
+                        font-weight: 400;
+                        font-size: 0.8rem;
+                        
+                    }
+                }
+                .contact-box {
+                    display: flex;
+                    .icon-contact {
+                        align-self: center;
+                        font-size: 1.2rem;
+                        margin: 0 5px;
+                    }
+                }
+            }
+        }
+    }
+}

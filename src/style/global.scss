@@ -1,0 +1,132 @@
+
+
+
+
+
+
+.app-main-container {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #EBE9E4;
+    .title-container {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .app-top-title {
+        font-size: 2.4rem;
+        margin: 0 auto 50px auto;
+        padding: 100px 0 0 0;
+        width: clamp(700px, 90vw, 1000px);
+    }
+}
+
+.card-search-container {
+    display: flex;
+    border: 0px solid transparent;
+    width: 733px;
+    margin: 20px auto;
+    .card-inner-container {
+        border-bottom: 1px solid black;
+        margin: 0 auto 0 0;
+        .icon-search {
+            font-size: 1.5rem;
+            margin: 0 5px;
+            border: 0px solid transparent;
+        }
+        .card-search {
+            font-size: 1.2rem;
+            width: 313.31px;
+            background: #EBE9E4;
+            border: 0px solid transparent;
+        }
+    }
+    .icon-filter-desktop {
+        cursor: pointer;
+        display: block; 
+        font-size: 1.8rem; 
+        // margin: 0  0 auto;
+    }
+    .mobile-section {
+        display: flex;
+        .icon-filter-mobile {
+            display: none; 
+        }
+        .icon-thumb {
+            cursor: pointer;
+            font-size: 2rem;
+            margin: 0 0 0 auto;
+        }
+    }
+}
+
+@media screen 
+and (min-width: 300px)
+and (max-width: 770px) {
+    .app-main-container {
+        position: sticky;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #EBE9E4;
+        .title-container {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .app-top-title {
+            font-size: 2.4rem;
+            margin: 0 20px 50px 20px;
+            padding: 100px 0 0 0;
+            width: auto;
+        }
+    }
+    
+    .card-search-container {
+        display: flex;
+        border: 0px solid transparent;
+        width: auto;
+        margin: 20px 20px;
+        flex-direction: column;
+        .card-inner-container {
+            border-bottom: 1px solid black;
+            margin: 0 5px;
+            display: flex;
+            .icon-search {
+                border:1px solid black;
+                font-size: 1.5rem;
+                margin: 0 5px;
+                border: 0px solid transparent;
+            }
+            .card-search {
+                font-size: 1.2rem;
+                width: 313.31px;
+                background: #EBE9E4;
+                border: 0px solid transparent;
+            }
+        }
+        .icon-filter-desktop {
+            display: none; 
+        }
+        .mobile-section {
+            display: flex;
+            margin: 10px 0;
+            .icon-filter-mobile {
+                display: block; 
+                cursor: pointer;
+                font-size: 1.8rem; 
+                margin: 0 auto 0 0;
+            }
+            .icon-thumb {
+                cursor: pointer;
+                font-size: 2rem;
+                margin: 0 0 0 auto;
+            }
+        }
+    }
+}
