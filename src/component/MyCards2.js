@@ -106,7 +106,6 @@ export default function MyCards2() {
                         if (!menuChange) { setMenuChange(true) }
                         else { setMenuChange(false) }
                     }}/>
-                
                 {
                     menuChange ?
                     <div aria-label={`Please continue`} className="thumb-display-main-container">

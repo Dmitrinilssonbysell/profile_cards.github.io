@@ -89,7 +89,6 @@ export default function Thumb() {
 
     return (
         <React.Fragment>
-
             <Search
                 onClick_search_icon={() => {
                     if (sortList) setSortList(false)
@@ -103,7 +102,6 @@ export default function Thumb() {
                     if (!menuChange) { setMenuChange(true) }
                     else { setMenuChange(false) }
                 }}/>
-
             <div aria-label={`Please continue`} className="thumb-display-main-container">
                 {
                     userCardMapData.sort(
@@ -125,13 +123,11 @@ export default function Thumb() {
                                 <div aria-label={`
                                     Profile card for ${elem.first_name}
                                 `} style={{ background:color}} className="thumb-card">
-                                    
                                     <div style={{background: color}} className="inner-top">
                                         <p aria-label={`This is, ${elem.first_name}`}>{ elem.first_name }</p>
                                         <div className="inner-box1"/>
                                         <div style={{background: color}} className="inner-box2"/>
                                     </div>
-
                                     <div aria-label={`
                                             This is a picture of ${elem.first_name}. And ${genderPic} is ${elem.age} years old
                                         `} 
@@ -139,7 +135,6 @@ export default function Thumb() {
                                         background:`url(${elem.picture_thumbnail_large})`,
                                         backgroundRepeat:"no-repeat",
                                     }} id="thumbnail-photo-desktop"/>
-                                    
                                     <div aria-label={`
                                         This is a picture of ${elem.first_name}. And ${genderPic} is ${elem.age} years old
                                         `}  
@@ -147,12 +142,8 @@ export default function Thumb() {
                                         background:`url(${elem.picture_thumbnail_small})`,
                                         backgroundRepeat:"no-repeat",
                                     }} id="thumbnail-photo-mobile"/>
-
-
                                     <div aria-label={`Contact information for, ${elem.first_name}`} className="inner-bottom">
-                                        
                                         <p aria-label={`${elem.first_name}, is located in ${elem.location}`}>{ elem.location }</p>
-                                        
                                         <div aria-label={`
                                             Send email to ${elem.first_name}, or give a call
                                         `} className="contact-container">
@@ -163,17 +154,13 @@ export default function Thumb() {
                                                 `Use the telephone to call ${elem.first_name}. ${gender} phone number is ${elem.phone}`
                                             } className="icon-contact"/>
                                         </div>
-                            
                                     </div>
-                                
                                 </div>
-                            
                             </React.Fragment>
                         )
                     })
                 }
             </div>
-
         </React.Fragment>
     )
 }

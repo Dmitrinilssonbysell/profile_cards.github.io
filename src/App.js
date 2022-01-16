@@ -1,10 +1,9 @@
-import React, { useState } from "react"
+import React, { useState, lazy, Suspense } from "react"
 // CONTEXT
 import { MenuChange } from "./Context"
 // STYLE
 import "./style/global.css"
-// import MyCards from "./component/MyCards"
-import MyCards2 from "./component/MyCards2"
+const MyCards = lazy(() => import("./component/MyCards2"))
 
 function App() {
 
@@ -17,7 +16,9 @@ function App() {
       main features of this application
     `}>
       <MenuChange.Provider value={{ menuChange, setMenuChange }}>
-        <MyCards2/>
+        <Suspense fallback={""}>
+          <MyCards/>
+        </Suspense>
       </MenuChange.Provider>
     </div>
   );
