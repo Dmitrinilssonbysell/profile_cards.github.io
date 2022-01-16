@@ -29,7 +29,7 @@ export default function List() {
             headers: { "Content-type": "application/json" }
         })
         .then(response => {
-            if (response.status === 700) {
+            if (response.status === 200) {
                 response.json().then(res => {
                     for (let e of res.results) {
                         data.push({
