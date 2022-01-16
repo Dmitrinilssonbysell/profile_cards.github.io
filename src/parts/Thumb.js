@@ -30,7 +30,7 @@ export default function Thumb() {
         })
         .then(response => {
             console.log(response.status)
-            if (response.status === 220) {
+            if (response.status === 200) {
                 response.json().then(res => {
                     for (let e of res.results) {
                         data.push({
