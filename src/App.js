@@ -3,7 +3,7 @@ import React, { useState, lazy, Suspense } from "react"
 import { MenuChange } from "./Context"
 // STYLE
 import "./style/global.css"
-const MyCards = lazy(() => import("./component/MyCards2"))
+const MyCards2 = lazy(() => import("./component/MyCards2"))
 
 function App() {
 
@@ -17,7 +17,7 @@ function App() {
     `}>
       <MenuChange.Provider value={{ menuChange, setMenuChange }}>
         <Suspense fallback={""}>
-          <MyCards/>
+          <MyCards2/>
         </Suspense>
       </MenuChange.Provider>
     </div>
