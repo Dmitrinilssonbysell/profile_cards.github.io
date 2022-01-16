@@ -29,7 +29,7 @@ export default function List() {
             headers: { "Content-type": "application/json" }
         })
         .then(response => {
-            if (response.status === 200) {
+            if (response.status === 700) {
                 response.json().then(res => {
                     for (let e of res.results) {
                         data.push({
@@ -48,6 +48,22 @@ export default function List() {
                     data.pop()
                     setUserCardMapData(data)
                 })
+            } else {
+                let message = "Data was not found, please return later."
+                data.push({
+                    first_name: message,
+                    location: message,
+                    email: message,
+                    phone: message,
+                    id: message,
+                    picture_thumbnail_large: message,
+                    picture_thumbnail_small: message,
+                    gender: message,
+                    age: message
+                })
+                data.push(rows)
+                data.pop()
+                setUserCardMapData(data)
             }
         })
         return () => { setUserCardMapData([{}]) }

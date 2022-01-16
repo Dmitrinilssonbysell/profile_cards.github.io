@@ -48,6 +48,22 @@ export default function Thumb() {
                     data.pop()
                     setUserCardMapData(data)
                 })
+            } else {
+                let message = "Data was not found, please return later."
+                data.push({
+                    first_name: message,
+                    location: message,
+                    email: message,
+                    phone: message,
+                    id: message,
+                    picture_thumbnail_large: message,
+                    picture_thumbnail_small: message,
+                    gender: message,
+                    age: message
+                })
+                data.push(rows)
+                data.pop()
+                setUserCardMapData(data)
             }
         })
         return () => { setUserCardMapData([{}]) }
