@@ -29,7 +29,6 @@ export default function Thumb() {
             headers: { "Content-type": "application/json" }
         })
         .then(response => {
-            console.log(response.status)
             if (response.status === 200) {
                 response.json().then(res => {
                     for (let e of res.results) {
