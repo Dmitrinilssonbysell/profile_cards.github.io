@@ -3,7 +3,8 @@ import React, { useState } from "react"
 import { MenuChange } from "./Context"
 // STYLE
 import "./style/global.css"
-import MyCards from "./component/MyCards"
+// import MyCards from "./component/MyCards"
+import MyCards2 from "./component/MyCards2"
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
       main features of this application
     `}>
       <MenuChange.Provider value={{ menuChange, setMenuChange }}>
-        <MyCards/>
+        <MyCards2/>
       </MenuChange.Provider>
     </div>
   );
