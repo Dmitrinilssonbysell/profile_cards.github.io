@@ -1,8 +1,6 @@
 import React, {
     useState,
     useEffect,
-    lazy,
-    Suspense,
     useContext
 } from 'react'
 // STYLE
