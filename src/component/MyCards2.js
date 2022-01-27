@@ -110,7 +110,9 @@ export default function MyCards2() {
                         {
                             userCardMapData.sort(
                                 sortList ? sortUpdateListByDate(1,-1) : sortUpdateListByDate(-1,1)
-                            ).filter(searchEmpty ? name => name.first_name : name => name.first_name >= searchValue).map((elem, index) => {
+                            ).filter(
+                                i => Object.values(i).join('').toLowerCase().includes(searchValue.toLowerCase())
+                            ).map((elem, index) => {
                                 
                                 let color
                                 if (index % 5 === 0) { color = "rgba(167, 184, 168, 1)" }
